@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Finanças</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1>💰 Gerenciador de Finanças</h1>
+    </header>
+
+    <main class="container">
+      <!-- Resumo Financeiro -->
+      <section class="summary">
+        <div class="summary-card">
+          <h3>Receitas</h3>
+          <p class="amount income" id="total-income">R$ 0,00</p>
+        </div>
+        <div class="summary-card">
+          <h3>Despesas</h3>
+          <p class="amount expense" id="total-expense">R$ 0,00</p>
+        </div>
+        <div class="summary-card highlight">
+          <h3>Saldo</h3>
+          <p class="amount" id="balance">R$ 0,00</p>
+        </div>
+      </section>
+
+      <!-- Formulário de Transação -->
+      <section class="form-section">
+        <h2>Nova Transação</h2>
+        <form id="transaction-form">
+          <div class="form-group">
+            <label for="description">Descrição</label>
+            <input type="text" id="description" required placeholder="Ex: Salário, Aluguel...">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="amount">Valor (R$)</label>
+              <input type="number" id="amount" step="0.01" required placeholder="0.00">
+            </div>
+
+            <div class="form-group">
+              <label for="category">Categoria</label>
+              <select id="category" required>
+                <option value="">Selecione...</option>
+                <option value="salary">Salário</option>
+                <option value="food">Alimentação</option>
+                <option value="transport">Transporte</option>
+                <option value="entertainment">Lazer</option>
+                <option value="health">Saúde</option>
+                <option value="education">Educação</option>
+                <option value="housing">Moradia</option>
+                <option value="bills">Contas</option>
+                <option value="shopping">Compras</option>
+                <option value="other">Outros</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="type">Tipo</label>
+              <select id="type" required>
+                <option value="income">Receita</option>
+                <option value="expense">Despesa</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Data</label>
+              <input type="date" id="date" required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Adicionar Transação</button>
+        </form>
+      </section>
+
+      <!-- Filtros -->
+      <section class="filters">
+        <h2>Filtros</h2>
+        <div class="filter-controls">
+          <select id="filter-type">
+            <option value="all">Todas</option>
+            <option value="income">Receitas</option>
+            <option value="expense">Despesas</option>
+          </select>
+
+          <select id="filter-category">
+            <option value="all">Todas Categorias</option>
+            <option value="salary">Salário</option>
+            <option value="food">Alimentação</option>
+            <option value="transport">Transporte</option>
+            <option value="entertainment">Lazer</option>
+            <option value="health">Saúde</option>
+            <option value="education">Educação</option>
+            <option value="housing">Moradia</option>
+            <option value="bills">Contas</option>
+            <option value="shopping">Compras</option>
+            <option value="other">Outros</option>
+          </select>
+
+          <button id="clear-filters" class="btn btn-secondary">Limpar Filtros</button>
+        </div>
+      </section>
+
+      <!-- Lista de Transações -->
+      <section class="transactions-section">
+        <div class="section-header">
+          <h2>Transações</h2>
+          <button id="clear-all" class="btn btn-danger">Limpar Todas</button>
+        </div>
+        <div id="transactions-list" class="transactions-list">
+          <p class="empty-state">Nenhuma transação cadastrada. Adicione sua primeira transação acima!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
