@@ -30,15 +30,11 @@ TypeScript, Vite, and lots of coffee ☕ - cutting-edge technologies to ensure a
 
 ## 🛠️ Installation
 
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Start the development server:
+1. The only command you need, it will install the dependecies and run the dev server:
 ```bash
 npm run dev
 ```
+
 
 3. Open your browser at `http://localhost:3000`
 
