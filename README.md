@@ -88,7 +88,7 @@ financial-manager/
 
 ## 🔧 Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - the only command you need, it will install the dependecies and run the dev server
 - `npm run build` - Generate production build
 - `npm run preview` - Preview production build
 
