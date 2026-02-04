@@ -32,8 +32,9 @@ TypeScript, Vite, and lots of coffee ☕ - cutting-edge technologies to ensure a
 
 1. The only command you need, it will install the dependecies and run the dev server:
 ```bash
-npm run dev
+npm run dev -s
 ```
+
 
 
 3. Open your browser at `http://localhost:3000`
@@ -84,7 +85,7 @@ financial-manager/
 
 ## 🔧 Available Scripts
 
-- `npm run dev` - the only command you need, it will install the dependecies and run the dev server
+- `npm run dev -s` - the only command you need, it will install the dependecies and run the dev server
 - `npm run build` - Generate production build
 - `npm run preview` - Preview production build
 
