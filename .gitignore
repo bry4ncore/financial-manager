@@ -3,3 +3,8 @@ dist
 .DS_Store
 *.log
 .vscode
+
+# AI tooling
+.claude/
+.mcp.json
+.mcp.json.bak
