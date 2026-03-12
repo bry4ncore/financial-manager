@@ -5,6 +5,6 @@ dist
 .vscode
 
 # AI tooling
-.claude/
+.claude/settings.local.*
 .mcp.json
 .mcp.json.bak
