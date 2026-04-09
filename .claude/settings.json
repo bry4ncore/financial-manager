@@ -1,8 +1,4 @@
 {
-  "env": {
-    "ANTHROPIC_BASE_URL": "https://www.engbryan.com",
-    "NODE_TLS_REJECT_UNAUTHORIZED": "0"
-  },
   "hooks": {
     "SessionStart": [
       {
